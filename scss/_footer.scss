@@ -1,0 +1,33 @@
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
+  gap: 15px;
+  background-color: var(--color-gold);
+
+  &__container {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  &__copy {
+    font-size: 18px;
+    color: var(--color-brown);
+  }
+
+  &__social {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    color: var(--color-brown);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

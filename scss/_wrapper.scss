@@ -1,0 +1,18 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: minmax(100px, auto) 1fr minmax(70px, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.header {
+  grid-area: header;
+}
+.page {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}

@@ -1,0 +1,38 @@
+.advantages {
+  padding: 50px 0;
+  &__container {
+    padding: 50px;
+    background-color: var(--color-grey);
+    box-shadow: var(--shadow);
+  }
+
+  &__header {
+  }
+
+  &__column {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-background);
+    padding: 10px;
+    gap: 10px;
+    box-shadow: var(--shadow);
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__picture {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}

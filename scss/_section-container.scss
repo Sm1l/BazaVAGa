@@ -1,0 +1,9 @@
+._section-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
+  gap: 15px;
+}
+._container {
+  grid-column: 2 / 3;
+}
