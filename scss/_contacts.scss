@@ -72,6 +72,7 @@
 
     &__info {
       padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
     }
     &__title {
       font-size: 28px;
@@ -101,12 +102,10 @@
   }
 }
 
-}
 @media (max-width: 346px) {
   .contacts {
     &__column {
       transform: translateY(150%);
-     
     }
     &__info {
     }
