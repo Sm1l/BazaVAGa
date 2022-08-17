@@ -9,9 +9,14 @@
   &__header {
   }
 
-  &__column {
+  &__row {
     display: flex;
     gap: 20px;
+  }
+
+  &__column {
+    display: flex;
+    flex: 1;
   }
 
   &__item {
@@ -37,8 +42,35 @@
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1220px) {
   .advantages {
-    padding: 20px 0;
+    
+    &__container {
+      padding: 20px;
+    }
+    &__row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__column {
+      margin: 0 -10px -20px;
+      padding: 0 10px 20px;
+      flex: 0 1 33.333%;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .advantages {
+    &__column {
+      flex: 0 1 50%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .advantages {
+    &__column {
+      flex: 0 1 100%;
+    }
   }
 }

@@ -1,17 +1,18 @@
 .contacts {
   position: relative;
   padding: 50px 0 0 0;
-  // min-height: 600px;
   &__container {
   }
 
   &__header {
   }
-
-  &__info {
+  &__column {
     position: absolute;
     transform: translateY(50%);
     z-index: 2;
+  }
+
+  &__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +57,58 @@
 }
 @media (max-width: 990px) {
   .contacts {
-    padding: 20px 0 0 0;
+    padding: 20px 0 150px 0;
+    &__column {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      transform: translateY(200%);
+      padding: 30px;
+    }
+
+    &__map {
+    }
+
+    &__info {
+      padding: 20px;
+    }
+    &__title {
+      font-size: 28px;
+    }
+
+    &__adress {
+      font-size: 18px;
+    }
+
+    &__phone {
+      font-size: 18px;
+    }
+
+    &__worktime {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 402px) {
+  .contacts {
+    &__column {
+      transform: translateY(260%);
+      padding: 10px;
+    }
+    &__info {
+    }
+  }
+}
+
+}
+@media (max-width: 346px) {
+  .contacts {
+    &__column {
+      transform: translateY(150%);
+     
+    }
+    &__info {
+    }
   }
 }
