@@ -194,6 +194,11 @@ html {
   text-decoration: underline;
 }
 
+.header__worktime {
+  font-size: 16px;
+  line-height: 150%;
+}
+
 @media (max-width: 990px) {
   .header {
     padding: 20px 0;
