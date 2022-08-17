@@ -58,3 +58,26 @@
     }
   }
 }
+
+// @media (max-width: 1100px) {
+//   .price {
+//     &__column {
+//       flex-wrap: wrap;
+//     }
+//     &__item {
+//       flex: 0 1 50%;
+//     }
+//   }
+// }
+
+@media (max-width: 990px) {
+  .price {
+    padding: 20px 0;
+    &__column {
+      &__item {
+      }
+    }
+    .item-price {
+    }
+  }
+}

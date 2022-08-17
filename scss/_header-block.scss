@@ -16,3 +16,14 @@
     line-height: 150%;
   }
 }
+@media (max-width: 990px) {
+  .header-block {
+    padding: 0 0 10px 0;
+    &__title {
+      font-size: 28px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
