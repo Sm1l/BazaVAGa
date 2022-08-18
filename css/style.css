@@ -95,10 +95,9 @@ html {
 }
 
 .header {
-  position: absolute;
   width: 100%;
   z-index: 50;
-  padding: 50px 0;
+  margin: 20px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
@@ -201,7 +200,10 @@ html {
 
 @media (max-width: 990px) {
   .header {
-    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background-color: rgba(228, 219, 188, 0.9);
   }
   .header__logo {
     font-size: 24px;
@@ -230,6 +232,9 @@ html {
     height: 50px;
     background-color: var(--color-brown);
     border-radius: 50%;
+  }
+  .header__contacts {
+    padding: 10px 0 10px;
   }
   .header__phone {
     font-size: 18px;
@@ -282,7 +287,7 @@ body {
 
 .main {
   position: relative;
-  margin-top: -100px;
+  margin-top: -120px;
   justify-items: end;
 }
 
@@ -862,7 +867,7 @@ body {
 
 @media (max-width: 346px) {
   .contacts__column {
-    -webkit-transform: translateY(150%);
-            transform: translateY(150%);
+    -webkit-transform: translateY(230%);
+            transform: translateY(230%);
   }
 }
