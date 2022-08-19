@@ -1,5 +1,5 @@
 .advantages {
-  padding: 50px 0;
+  padding: 100px 0 50px;
   &__container {
     padding: 50px;
     background-color: var(--color-grey);
@@ -44,7 +44,6 @@
 
 @media (max-width: 1220px) {
   .advantages {
-    
     &__container {
       padding: 20px;
     }

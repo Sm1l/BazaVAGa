@@ -35,23 +35,31 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <a href="#" class="header__logo">BazaVAGa</a>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li><a class="header__link" href="#advantages">Преимущества</a></li>
-            <li><a class="header__link" href="#price">Услуги</a></li>
-            <li><a class="header__link" href="#contacts">Контакты</a></li>
-            <!-- <li><a class="header__link" href="#">Контакты</a></li> -->
-          </ul>
-          <div class="header__burger">
-            <span></span>
+        <div class="header__container">
+          <a href="#" class="header__logo">BazaVAGa</a>
+          <div class="header__burger burger">
+            <span class="burger__bar"></span>
+            <span class="burger__bar"></span>
+            <span class="burger__bar"></span>
           </div>
-        </nav>
-        <div class="header__contacts">
-          <a href="tel:+79160773444" class="header__phone">+7(916)077-34-44</a>
-          <div class="header__worktime">
-            Работаем без выходных <br />
-            с 9:00 до 22:00
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a class="header__link" href="#advantages">Преимущества</a>
+              </li>
+              <li><a class="header__link" href="#price">Услуги</a></li>
+              <li><a class="header__link" href="#contacts">Контакты</a></li>
+              <!-- <li><a class="header__link" href="#">Контакты</a></li> -->
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <a href="tel:+79160773444" class="header__phone"
+              >+7(916)077-34-44</a
+            >
+            <div class="header__worktime">
+              Работаем без выходных <br />
+              с 9:00 до 22:00
+            </div>
           </div>
         </div>
       </header>
@@ -277,5 +285,6 @@
         </div>
       </footer>
     </div>
+    <script src="/js/burger.js"></script>
   </body>
 </html>
