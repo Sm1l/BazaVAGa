@@ -315,16 +315,16 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     justify-self: right;
-    gap: 8px;
+    gap: 6px;
     cursor: pointer;
   }
   .burger.active .burger__bar:first-child {
-    -webkit-transform: translateY(13px) rotate(45deg);
-            transform: translateY(13px) rotate(45deg);
+    -webkit-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
   }
   .burger.active .burger__bar:last-child {
-    -webkit-transform: translateY(-13px) rotate(-45deg);
-            transform: translateY(-13px) rotate(-45deg);
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
   }
   .burger.active .burger__bar:nth-child(2) {
     -webkit-transform: scale(0);
@@ -332,8 +332,8 @@ html {
   }
   .burger__bar {
     display: block;
-    width: 40px;
-    height: 5px;
+    width: 30px;
+    height: 3px;
     background-color: var(--color-brown);
     -webkit-transition: 500ms;
     transition: 500ms;
