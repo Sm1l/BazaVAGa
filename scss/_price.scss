@@ -1,6 +1,6 @@
 .price {
   background-color: rgb(250, 250, 250);
-  padding: 50px 0;
+  padding: 50px 0;  
   &_container {
   }
 
@@ -70,6 +70,7 @@
 
 @media (max-width: 990px) {
   .price {
+    scroll-margin-top: 70px;
     &__row {
       flex-wrap: wrap;
       gap: 0;
