@@ -73,3 +73,9 @@
     }
   }
 }
+
+@media (max-width: 499px) {
+  .advantages {
+    scroll-margin-top: -50px;
+  }
+}

@@ -92,6 +92,12 @@
     }
   }
 }
+
+@media (max-width: 499px) {
+  .contacts {
+    scroll-margin-top: 40px;
+  }
+}
 @media (max-width: 402px) {
   .contacts {
     &__column {

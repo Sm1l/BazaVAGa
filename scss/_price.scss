@@ -1,6 +1,6 @@
 .price {
   background-color: rgb(250, 250, 250);
-  padding: 50px 0;  
+  padding: 50px 0;
   &_container {
   }
 
@@ -98,5 +98,11 @@
   .item-price {
     &__container {
     }
+  }
+}
+
+@media (max-width: 499px) {
+  .price {
+    scroll-margin-top: 20px;
   }
 }
