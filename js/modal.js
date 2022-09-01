@@ -9,3 +9,7 @@ function modalShow(evt) {
 }
 
 logo.addEventListener("click", modalShow);
+itemLabels.forEach((label) => label.addEventListener("click", modalShow));
+itemImages.forEach((image) => image.addEventListener("click", modalShow));
+// itemLabels.addEventListener("click", modalShow);
+// itemImages.addEventListener("click", modalShow);
