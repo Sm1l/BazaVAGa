@@ -5,6 +5,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -60,6 +61,12 @@
       transition: filter 300ms;
     }
   }
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 300ms;
 }
 
 @media (max-width: 1000px) {

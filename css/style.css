@@ -1124,6 +1124,14 @@ body.noscroll {
   transition: filter 300ms, -webkit-filter 300ms;
 }
 
+.modal-show {
+  display: block;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+}
+
 @media (max-width: 1000px) {
   .modal__title {
     font-size: 28px;
@@ -1177,5 +1185,43 @@ body.noscroll {
   .modal__image {
     width: 35px;
     height: 35px;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(calc(2000px - 50%));
+            transform: translateX(-50%) translateY(calc(2000px - 50%));
+  }
+  70% {
+    -webkit-transform: translateX(-50%) translateY(calc(-30px - 50%));
+            transform: translateX(-50%) translateY(calc(-30px - 50%));
+  }
+  90% {
+    -webkit-transform: translateX(-50%) translateY(calc(10px - 50%));
+            transform: translateX(-50%) translateY(calc(10px - 50%));
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(calc(0px - 50%));
+            transform: translateX(-50%) translateY(calc(0px - 50%));
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(calc(2000px - 50%));
+            transform: translateX(-50%) translateY(calc(2000px - 50%));
+  }
+  70% {
+    -webkit-transform: translateX(-50%) translateY(calc(-30px - 50%));
+            transform: translateX(-50%) translateY(calc(-30px - 50%));
+  }
+  90% {
+    -webkit-transform: translateX(-50%) translateY(calc(10px - 50%));
+            transform: translateX(-50%) translateY(calc(10px - 50%));
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(calc(0px - 50%));
+            transform: translateX(-50%) translateY(calc(0px - 50%));
   }
 }
