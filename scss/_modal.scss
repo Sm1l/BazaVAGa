@@ -1,0 +1,178 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--color-background);
+    gap: 10px;
+    box-shadow: 0px 10px 15px 0px rgba(76, 51, 32, 0.9);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__phone {
+    display: block;
+    font-size: 24px;
+    color: var(--color-brown);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: sepia(60%);
+    transition: filter 300ms;
+    &:hover {
+      filter: none;
+      transition: filter 300ms;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    &__container {
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__contacts {
+    }
+
+    &__phone {
+      font-size: 20px;
+    }
+
+    &__link {
+    }
+
+    &__image {
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .modal {
+    &__container {
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__contacts {
+    }
+
+    &__phone {
+      font-size: 14px;
+    }
+
+    &__link {
+    }
+
+    &__image {
+    }
+  }
+}
+@media (max-width: 420px) {
+  .modal {
+    &__container {
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__contacts {
+    }
+
+    &__phone {
+      font-size: 12px;
+    }
+
+    &__link {
+    }
+
+    &__image {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .modal {
+    &__container {
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 10px;
+    }
+
+    &__contacts {
+    }
+
+    &__phone {
+      font-size: 10px;
+    }
+
+    &__link {
+    }
+
+    &__image {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

@@ -37,10 +37,10 @@
     height: 50px;
     border-radius: 50%;
     filter: sepia(60%);
-    transition: filter 500ms;
+    transition: filter 300ms;
     &:hover {
       filter: none;
-      transition: filter 500ms;
+      transition: filter 300ms;
     }
   }
 }
@@ -49,9 +49,15 @@
   .footer {
     &__container {
       flex-direction: column-reverse;
+      gap: 0;
+    }
+    &__social {
+      gap: 50px;
+      padding: 5px;
     }
     &__copy {
-      font-size: 12px;
+      font-size: 8px;
+      padding: 5px;
     }
   }
 }

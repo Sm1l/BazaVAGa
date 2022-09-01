@@ -20,7 +20,7 @@
     font-weight: 600;
     color: var(--color-brown);
     justify-self: left;
-    padding: 10px 0;
+    margin: 10px 0;
   }
 
   &__menu {
@@ -40,13 +40,13 @@
     display: block;
     font-size: 20px;
     font-weight: 500;
-    transition: transform 500ms;
+    transition: transform 300ms;
     color: var(--color-brown);
 
     &:hover {
       text-decoration: underline;
       transform: scale(120%);
-      transition: transform 500ms;
+      transition: transform 300ms;
     }
   }
   &__burger {
@@ -133,7 +133,7 @@
       padding: 15px;
       background-color: rgba(228, 219, 188, 0.9);
       overflow: auto;
-      transition: 500ms;
+      transition: 300ms;
       &.active {
         top: 0;
         // margin: 88px 0 0;
@@ -143,26 +143,28 @@
     &__list {
       display: flex;
       flex-direction: column;
+      text-align: center;
       justify-content: center;
-      align-items: center;
-      gap: 40px;
+      gap: 0;
       padding: 80px 0 0;
     }
 
     &__link {
       font-size: 40px;
       line-height: 150%;
+      padding: 20px 0;
+      border-bottom: 2px solid var(--color-brown);
       &:hover {
         transform: none;
+        text-decoration: none;
       }
     }
 
     &__burger {
       grid-row: 1 / 2;
       grid-column: 4 / 5;
-      // position: relative;
       z-index: 3;
-      padding: 10px 0;
+      margin: 10px 0;
     }
 
     &__contacts {
@@ -170,7 +172,6 @@
       grid-column: 3 / 4;
       padding: 10px 0 10px;
       z-index: 3;
-      // position: relative;
       justify-self: center;
     }
 
@@ -207,26 +208,27 @@
       width: 30px;
       height: 3px;
       background-color: var(--color-brown);
-      transition: 500ms;
+      transition: 300ms;
     }
   }
 }
 
 @media (max-width: 499px) {
   .header {
+    &__container {
+      min-height: 70px;
+    }
     &__logo {
       font-size: 20px;
     }
 
     &__menu {
       &.active {
-       
       }
     }
 
     &__list {
-      gap: 20px;
-      padding: 35px 0 0;
+      padding: 70px 0 0;
     }
 
     &__link {
@@ -235,8 +237,6 @@
 
     &__contacts {
       padding: 0;
-
-      // justify-self: center;
     }
 
     &__phone {
