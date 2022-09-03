@@ -5,7 +5,8 @@ body {
   line-height: 150%;
   color: var(--color-brown);
   background-color: #fafafa;
-  &.noscroll{
+
+  &.noscroll {
     overflow: hidden;
   }
 }

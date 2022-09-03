@@ -1,15 +1,40 @@
 const modal = document.querySelector(".modal");
-const logo = document.querySelector(".header__logo");
-const itemLabels = document.querySelectorAll(".item-price__label");
-const itemImages = document.querySelectorAll(".item-price__image");
+const modalLink = document.querySelectorAll(".modal__open");
+const modalClose = modal.querySelector(".modal__close");
+// const body = document.querySelector("body");
 
-function modalShow(evt) {
+//Показ модального окна
+
+modalLink.forEach((link) => link.addEventListener("click", showOnClick));
+
+function showOnClick(evt) {
   evt.preventDefault();
-  modal.classList.toggle("modal-show");
+  modal.classList.add("modal-show");
+  body.classList.toggle("noscroll");
 }
+//Закрытие модального окна
 
-logo.addEventListener("click", modalShow);
-itemLabels.forEach((label) => label.addEventListener("click", modalShow));
-itemImages.forEach((image) => image.addEventListener("click", modalShow));
-// itemLabels.addEventListener("click", modalShow);
-// itemImages.addEventListener("click", modalShow);
+modalClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  closeOnClick();
+});
+
+modal.addEventListener("click", function (evt) {
+  if (!evt.target.closest(".modal__content")) {
+    closeOnClick();
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.key === "Escape") {
+    evt.preventDefault();
+    if (modal.classList.contains("modal-show")) {
+      closeOnClick();
+    }
+  }
+});
+
+function closeOnClick(evt) {
+  modal.classList.remove("modal-show");
+  body.classList.toggle("noscroll");
+}
