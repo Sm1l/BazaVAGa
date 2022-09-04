@@ -16,7 +16,6 @@ burger.addEventListener("click", burgerOnClick);
 
 function burgerOnClick(evt) {
   if (document.documentElement.clientWidth < 991) {
-    evt.preventDefault();
     burger.classList.toggle("active");
     menu.classList.toggle("active");
     body.classList.toggle("noscroll");
@@ -35,10 +34,10 @@ links.forEach((link) => link.addEventListener("click", closeOnClick));
 
 function closeOnClick(evt) {
   if (document.documentElement.clientWidth < 991) {
-    evt.preventDefault();
+    // evt.preventDefault();
     burger.classList.toggle("active");
     menu.classList.toggle("active");
-    body.classList.toggle("noscroll");
-    logo.classList.toggle("disabled");
+    body.classList.remove("noscroll");
+    logo.classList.remove("disabled");
   }
 }
