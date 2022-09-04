@@ -10,7 +10,7 @@ modalLink.forEach((link) => link.addEventListener("click", showOnClick));
 function showOnClick(evt) {
   evt.preventDefault();
   modal.classList.add("modal-show");
-  body.classList.toggle("noscroll");
+  body.classList.add("noscroll");
 }
 //Закрытие модального окна
 
@@ -36,5 +36,5 @@ window.addEventListener("keydown", function (evt) {
 
 function closeOnClick(evt) {
   modal.classList.remove("modal-show");
-  body.classList.toggle("noscroll");
+  body.classList.remove("noscroll");
 }

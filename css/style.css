@@ -216,6 +216,10 @@ html {
   display: none;
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 @media (max-width: 990px) {
   .header {
     -ms-grid-rows: 1fr;
@@ -1123,9 +1127,15 @@ body.noscroll {
 }
 
 .modal__phone {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 24px;
   color: var(--color-brown);
+  gap: 5px;
 }
 
 .modal__phone:hover {
@@ -1179,6 +1189,9 @@ body.noscroll {
   }
   .modal__phone {
     font-size: 20px;
+  }
+  .modal__phone img {
+    max-height: 20px;
   }
 }
 

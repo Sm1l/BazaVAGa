@@ -11,18 +11,14 @@ function burgerOnClick(evt) {
   burger.classList.toggle("active");
   menu.classList.toggle("active");
   body.classList.toggle("noscroll");
-  // logo.function (evt) {
-  //   evt.preventDefault();    
-  // }
+  logo.classList.toggle("disabled");
 }
-// function logoDisabled(evt){
-//   logo.
-// }
 
 links.forEach((link) => link.addEventListener("click", closeOnClick));
 
 function closeOnClick() {
-  burger.classList.remove("active");
-  menu.classList.remove("active");
-  body.classList.remove("noscroll");
+  burger.classList.toggle("active");
+  menu.classList.toggle("active");
+  body.classList.toggle("noscroll");
+  logo.classList.toggle("disabled");
 }
