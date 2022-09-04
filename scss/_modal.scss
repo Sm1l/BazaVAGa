@@ -55,6 +55,12 @@
     text-decoration: none;
     color: var(--color-brown);
     font-weight: 700;
+    // &::before ::after {
+    //   content: "";
+    //   width: 30px;
+    //   height: 5px;
+    //   color: var(--color-brown);
+    // }
   }
 
   &__contacts {
