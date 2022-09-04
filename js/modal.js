@@ -9,7 +9,6 @@ modalLink.forEach((link) => link.addEventListener("click", showOnClick));
 
 function showOnClick(evt) {
   evt.preventDefault();
-  // evt.stopPropagation();
   modal.classList.add("modal-show");
   body.classList.add("noscroll");
 }
