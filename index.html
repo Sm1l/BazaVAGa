@@ -45,11 +45,14 @@
           <nav class="header__menu">
             <ul class="header__list">
               <li>
-                <a class="header__link" href="#advantages">Преимущества</a>
+                <a class="header__link" href="#" id="advantages"
+                  >Преимущества</a
+                >
               </li>
-              <li><a class="header__link" href="#price">Услуги</a></li>
-              <li><a class="header__link" href="#contacts">Контакты</a></li>
-              <!-- <li><a class="header__link" href="#">Контакты</a></li> -->
+              <li><a class="header__link" href="#" id="price">Услуги</a></li>
+              <li>
+                <a class="header__link" href="#" id="contacts">Контакты</a>
+              </li>
             </ul>
           </nav>
           <div class="header__contacts">
@@ -86,10 +89,7 @@
             /></picture>
           </div>
         </section>
-        <section
-          class="page__advantages advantages _section-container"
-          id="advantages"
-        >
+        <section class="page__advantages advantages _section-container">
           <div class="advantages__container _container">
             <div class="advantages__header header-block">
               <h2 class="header-block__title">Наши преимущества</h2>
@@ -154,7 +154,7 @@
             </div>
           </div>
         </section>
-        <section class="page_price price _section-container" id="price">
+        <section class="page_price price _section-container">
           <div class="price_container _container">
             <div class="price__header header-block">
               <h2 class="header-block__title">Наши услуги</h2>
@@ -251,7 +251,7 @@
             </div>
           </div>
         </section>
-        <section class="page__contacts contacts" id="contacts">
+        <section class="page__contacts contacts">
           <div class="_section-container">
             <div class="contacts__container _container">
               <div class="contacts__header header-block">
@@ -341,7 +341,9 @@
             </p>
           </div>
           <div class="modal__contacts">
-            <a href="tel:+79160773444" class="modal__phone">+7(916)077-34-44</a>
+            <a href="tel:+79160773444" class="modal__phone">
+              <img src="images/logo/IconPhone.svg" alt="телефон">
+              +7(916)077-34-44</a>
             <a
               href="https://wa.me/+79160773444"
               class="modal__link"
@@ -363,5 +365,6 @@
     </section>
     <script src="js/burger.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>

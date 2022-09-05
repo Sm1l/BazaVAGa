@@ -1132,13 +1132,13 @@ body.noscroll {
 }
 
 .modal__close:hover::before {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .modal__close:hover::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .modal__contacts {
