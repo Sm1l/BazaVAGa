@@ -122,7 +122,7 @@ html {
   grid-column: 2 / 3;
   display: block;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-brown);
   -ms-grid-column-align: left;
       justify-self: left;
@@ -198,7 +198,7 @@ html {
   -ms-grid-column-align: right;
       justify-self: right;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-brown);
   padding: 0 0 10px;
 }
@@ -457,7 +457,7 @@ body.noscroll {
   display: block;
   font-size: 62px;
   line-height: 150%;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0 0 30px 0;
 }
 
@@ -640,7 +640,7 @@ body.noscroll {
 
 .header-block__title {
   font-size: 38px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%;
   padding: 0 0 10px;
 }
@@ -1092,7 +1092,7 @@ body.noscroll {
 .modal__title {
   text-align: center;
   font-size: 38px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%;
 }
 
