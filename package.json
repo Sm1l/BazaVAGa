@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf dist && parcel",
-    "build": "rm -rf dist && parcel build --public-url='/dist/'"
+    "build": "rm -rf dist && parcel build --public-url='/BazaVAGa/dist/'"
   },
   "repository": {
     "type": "git",
