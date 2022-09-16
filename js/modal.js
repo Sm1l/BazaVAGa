@@ -1,7 +1,7 @@
 const modal = document.querySelector(".modal");
 const modalLink = document.querySelectorAll(".modal__open");
 const modalClose = modal.querySelector(".modal__close");
-// const body = document.querySelector("body");
+const body = document.querySelector("body");
 
 //Показ модального окна
 

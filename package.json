@@ -1,0 +1,28 @@
+{
+  "name": "bazavaga",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rm -rf dist && parcel",
+    "build": "rm -rf dist && parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sm1l/BazaVAGa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sm1l/BazaVAGa/issues"
+  },
+  "homepage": "https://github.com/Sm1l/BazaVAGa#readme",
+  "dependencies": {
+    "parcel": "2.7.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.29.3"
+  }
+}
