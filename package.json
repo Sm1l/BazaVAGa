@@ -5,8 +5,8 @@
   "source": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf dist && parcel",
-    "build": "rm -rf dist && parcel build --public-url='/BazaVAGa/dist/'"
+    "start": "rm -rf docs && parcel --dist-dir=docs",
+    "build": "rm -rf docs && parcel build --public-url='/BazaVAGa/' --dist-dir=docs"
   },
   "repository": {
     "type": "git",
