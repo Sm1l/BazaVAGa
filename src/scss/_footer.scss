@@ -3,7 +3,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
   gap: 15px;
-  background-color: var(--color-gold);
+  background-image: linear-gradient(var(--color-gold), var(--color-orange));
 
   &__container {
     grid-column: 2 / 3;
@@ -45,19 +45,23 @@
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 768px) {
   .footer {
     &__container {
-      flex-direction: column-reverse;
+      // flex-direction: column-reverse;
       gap: 0;
     }
-    &__social {
-      gap: 50px;
+
+    &__copy {
+      font-size: 12px;
       padding: 5px;
     }
+  }
+}
+@media (max-width: 440px) {
+  .footer {
     &__copy {
-      font-size: 8px;
-      padding: 5px;
+      font-size: 10px;
     }
   }
 }

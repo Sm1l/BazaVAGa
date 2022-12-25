@@ -1,5 +1,5 @@
 .advantages {
-  padding: 100px 0 50px;
+  padding: 50px 0 0;
   &__container {
     padding: 50px;
     background-color: var(--color-grey);
@@ -37,8 +37,8 @@
   }
 
   &__picture {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 60px;
+    max-height: 60px;
   }
 }
 

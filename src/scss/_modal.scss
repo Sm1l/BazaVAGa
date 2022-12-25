@@ -36,14 +36,14 @@
   &__title {
     text-align: center;
     font-size: 38px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%;
   }
 
   &__text {
     text-align: center;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%;
   }
 
@@ -90,9 +90,11 @@
     align-items: center;
     font-size: 24px;
     color: var(--color-brown);
+    transition: color 300ms ease-out;
     gap: 5px;
     &:hover {
-      text-decoration: underline;
+      color: var(--color-orange);
+      transition: color 300ms ease-out;
     }
   }
 

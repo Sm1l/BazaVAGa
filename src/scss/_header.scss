@@ -5,10 +5,9 @@
     margin: 20px 0;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns:
-      1fr minmax(auto, 300px) minmax(auto, 800px) minmax(auto, 300px)
-      1fr;
+    grid-template-columns: 1fr minmax(auto, 220px) minmax(auto, 800px) minmax(auto, 220px) 1fr;
     align-items: center;
+    justify-content: center;
     gap: 15px;
   }
 
@@ -17,7 +16,7 @@
     grid-column: 2 / 3;
     display: block;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-brown);
     justify-self: left;
     margin: 10px 0;
@@ -39,14 +38,14 @@
   &__link {
     display: block;
     font-size: 20px;
-    font-weight: 500;
-    transition: transform 300ms;
+    transition: color 300ms;
     color: var(--color-brown);
 
     &:hover {
-      text-decoration: underline;
-      transform: scale(120%);
-      transition: transform 300ms;
+      // text-decoration: underline;
+      // transform: scale(120%);
+      color: var(--color-orange);
+      transition: color 300ms;
     }
   }
   &__burger {
@@ -69,9 +68,13 @@
     font-weight: 500;
     color: var(--color-brown);
     padding: 0 0 10px;
+    transition: color 300ms;
+    text-align: center;
+    align-content: center;
 
     &:hover {
-      text-decoration: underline;
+      color: var(--color-orange);
+      transition: color 300ms;
     }
   }
   &__worktime {
@@ -93,9 +96,7 @@
 @media (max-width: 990px) {
   .header {
     grid-template-rows: 1fr;
-    grid-template-columns:
-      1fr minmax(auto, 200px) minmax(auto, 590px) minmax(auto, 200px)
-      1fr;
+    // grid-template-columns: 1fr minmax(auto, 200px) minmax(auto, 590px) minmax(auto, 200px) 1fr;
     position: fixed;
     top: 0;
     left: 0;
@@ -108,12 +109,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: var(--color-gold);
+      background-image: linear-gradient(var(--color-orange), var(--color-gold));
       z-index: 2;
     }
 
     &__container {
       margin: 0;
+      grid-template-columns: 1fr minmax(auto, 130px) minmax(auto, 890px) minmax(auto, 30px) 1fr;
     }
 
     &__logo {
@@ -176,6 +178,8 @@
       padding: 10px 0 10px;
       z-index: 3;
       justify-self: center;
+      flex-direction: row;
+      gap: 10px;
     }
 
     &__phone {
@@ -196,10 +200,10 @@
 
     &.active {
       & .burger__bar:first-child {
-        transform: translateY(9px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
       }
       & .burger__bar:last-child {
-        transform: translateY(-9px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
       }
       & .burger__bar:nth-child(2) {
         transform: scale(0);
@@ -208,10 +212,17 @@
 
     &__bar {
       display: block;
-      width: 30px;
-      height: 3px;
+      width: 24px;
+      height: 2px;
       background-color: var(--color-brown);
       transition: 300ms;
+    }
+  }
+}
+@media (max-width: 570px) {
+  .header {
+    &__phone {
+      font-size: 12px;
     }
   }
 }
@@ -243,7 +254,7 @@
     }
 
     &__phone {
-      font-size: 14px;
+      font-size: 16px;
       padding: 0;
     }
 
@@ -272,7 +283,7 @@
     }
 
     &__phone {
-      font-size: 10px;
+      font-size: 14px;
     }
 
     &__worktime {
